@@ -1,6 +1,6 @@
 .include "cesplib_rars.asm"
 
-drawline:
+draw_wideline:
 	li a1, 64
 	li a2, 0
 	li a3, 0xffffff
