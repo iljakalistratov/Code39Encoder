@@ -1,8 +1,8 @@
 .include "cesplib_rars.asm"
 
 drawline:
-	li a1, 20
-	li a2, 1
+	li a1, 64
+	li a2, 20
 	li a3, 0xffffff
 	line:
 	jal draw_pixel	
