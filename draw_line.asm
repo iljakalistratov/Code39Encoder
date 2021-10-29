@@ -2,7 +2,7 @@
 
 drawline:
 	li a1, 64
-	li a2, 1
+	li a2, 0
 	li a3, 0xffffff
 	line:
 	jal draw_pixel	
