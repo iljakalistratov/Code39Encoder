@@ -22,4 +22,4 @@ draw_wideline:
 li a7, 10
 ecall
 
-.include "draw_pixel.asm"	
+.include "draw_pixel.asm"
