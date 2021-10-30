@@ -8,7 +8,7 @@
 #.include "cesplib_rars.asm"
 
 draw_pixel:
-# Creates colored pixel at position (x,y)  
+# Creates colored pixel at position (x,y)	
 
 # Inputs
 #----------------------

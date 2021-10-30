@@ -1,6 +1,6 @@
 .include "cesplib_rars.asm"
 
-drawline:
+draw_black_line:
 	li a1, 64
 	li a2, 0
 	li a3, 0x000000

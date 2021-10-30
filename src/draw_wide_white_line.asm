@@ -1,25 +1,15 @@
-.include "cesplib_rars.asm"
 
 draw_wideline:
-	li a1, 64
 	li a2, 0
-	li a3, 0xffffff
-	line:
-	jal draw_pixel	
-	addi a1, a1,-1
-	bne zero, a1, line
-	
+	li t2, 3
+	addi t1, a2, 3
+	wwline:
+	jal draw_white_line
 	addi a2, a2, 1
-	jal draw_pixel	
-	addi a1, a1,-1
-	bne zero, a1, line
+	bne t2, a2, wwline
 	
-	addi a2, a2, 1
-	jal draw_pixel	
-	addi a1, a1,-1
-	bne zero, a1, line
 	
 li a7, 10
 ecall
 
-.include "draw_pixel.asm"
+.include "draw_white_line.asm"
