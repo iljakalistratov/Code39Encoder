@@ -5,7 +5,7 @@
 #
 # Copyright 2021 Michael J. Klaiber
 
-#.include "cesplib_rars.asm"
+.include "cesplib_rars.asm"
 
 draw_pixel:
 # Creates colored pixel at position (x,y)	
