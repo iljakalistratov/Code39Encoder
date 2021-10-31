@@ -9,7 +9,7 @@ draw_wideline:
 	bne t2, a2, wwline
 	
 	
-li a7, 10
+#li a7, 10
 ecall
 
 .include "draw_white_line.asm"
