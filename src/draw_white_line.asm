@@ -1,4 +1,4 @@
-.include "cesplib_rars.asm"
+#.include "cesplib_rars.asm"
 
 draw_white_line:
 	li a1, 63
