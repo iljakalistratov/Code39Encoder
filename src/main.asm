@@ -31,3 +31,6 @@ main:
         
 .L.str:
 	.string "12"
+
+.include "draw_one.asm"
+.include "draw_two.asm"
