@@ -8,7 +8,8 @@ draw_white_line:
 	addi a1, a1,-1
 	bne zero, a1, line
 	
-li a7, 10
-ecall
+#li a7, 10
+#ecall
+ret
 
-.include "draw_pixel.asm"		
+.include "draw_pixel3.asm"		
