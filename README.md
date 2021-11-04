@@ -15,7 +15,7 @@ Replace -h3eH4ubuno in the this .md by your YT video
 
 ## Description
 
-Code39 is a barcode format, in which each char of the alphabet has its own pattern, consisting out of five black lines and four white lines. Besides of that, there are two different widths of the lines, 3 fat lines & the rest thin lines.
+Code39 is a barcode format, in which each char of the alphabet has its own pattern, consisting out of five black lines and four white lines. Besides of that, there are two different widths of the lines, 3 fat lines & the rest are thin lines.
 Code39 has the "*" as start, as well as, stop sign, to give a barcode scanner the
 opprotunity to know, where the word starts and where it ends.
 
@@ -41,6 +41,8 @@ Now if you started the program you should see an input window, which looks like 
 This is the place, where to enter the string you want to convert into Code39.
 
 If you entered a string, you can click on "OK". The program should start to encode it and show the converted Code39 format on the Bitmap Display.
+
+Due to lack of time, for now only strings, containing the chars "1" and "2" are working.
 
 ## Files
 Describe the content of each file of your application: e.g.
