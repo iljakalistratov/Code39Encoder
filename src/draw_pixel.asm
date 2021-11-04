@@ -6,7 +6,6 @@
 # Copyright 2021 Michael J. Klaiber
 
 .include "cesplib_rars.asm"
-
 draw_pixel:
 # Creates colored pixel at position (x,y)	
 
@@ -17,6 +16,7 @@ draw_pixel:
 #    a3: color
 # Outputs: None
 
+        
 	#STEP 3a: Save the callee save registers on the stack
 	# ADD YOUR STEP 3a CODE HERE
 	addi sp, sp, -4
