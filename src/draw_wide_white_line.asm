@@ -1,25 +1,37 @@
-.include "cesplib_rars.asm"
+draw_wide_white_line:
 
-draw_wideline:
-	li a1, 64
-	li a2, 0
+        addi sp, sp, -4
+        sw ra, 0(sp)
+        
+        li a7,4
+        ecall
+        
+	la t1,pixel_count
+	lw a1,0(t1)
+	li a2, 256
 	li a3, 0xffffff
-	line:
-	jal draw_pixel	
-	addi a1, a1,-1
-	bne zero, a1, line
+	wide_line_white:
+	jal ra, draw_pixel	
+	addi a2, a2,-1
+	bne zero, a2, wide_line_white
 	
-	addi a2, a2, 1
-	jal draw_pixel	
-	addi a1, a1,-1
-	bne zero, a1, line
+	addi, a1, a1, -1
 	
-	addi a2, a2, 1
-	jal draw_pixel	
-	addi a1, a1,-1
-	bne zero, a1, line
+	li a2, 256
+	wide_line_white1:
+	jal ra, draw_pixel	
+	addi a2, a2,-1
+	bne zero, a2, wide_line_white1
 	
-li a7, 10
-ecall
-
-.include "draw_pixel.asm"
+	addi, a1, a1, -1
+	
+	li a2, 256
+	wide_line_white2:
+	jal ra, draw_pixel	
+	addi a2, a2,-1
+	bne zero, a2, wide_line_white2
+	
+	lw ra, 0(sp)
+	addi sp, sp, 4
+	
+jalr zero,0(ra)
