@@ -96,6 +96,8 @@ for_loop.end:
 
 .include "draw_white_line.asm"
 
+.include "draw_wide_white_line.asm"
+
 .include "draw_black_line.asm"
 
 .include "draw_pixel.asm"
