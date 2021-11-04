@@ -29,14 +29,14 @@ C-code or compiled C-code.
 Before you start the program, it is important to open the Bitmap Display and to configure it.
 The configuration should look like this:
 
-![alt text](bitmapdisplay.png "Bitmap Display Configuration")
+![alt text](/pictures/bitmapdisplay.png "Bitmap Display Configuration")
 
 If this is done, click on the "Connect to program" button.
 Now you can assemble and run the main.asm.
 
 Now if you started the program you should see an input window, which looks like this:
 
-![alt text](input.png "Input Window")
+![alt text](/pictures/input.png "Input Window")
 
 This is the place, where to enter the string you want to convert into Code39.
 
