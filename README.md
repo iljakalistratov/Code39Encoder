@@ -70,8 +70,6 @@ src/read_input.asm # opens the input dialog
 
 src/analyze_input.asm # function to process the input
 
-src/read_input.asm # opens the input dialog
-
 src/encode.asm # function to convert every char of the string and draw it on the Bitmap Display
 
 src/create_pattern.asm # the draw function of every char in the alphabet is handled in this file
