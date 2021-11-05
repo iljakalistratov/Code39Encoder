@@ -55,7 +55,7 @@ nine: .string "9"
 
 # Drucke Eingabe und ermittelte Laenge
 
-#    jal ra,print_input
+#    jal ra,print_input  # Diese Funktion wurde nur fürs Debugging verwendet
 
 # Setze Ausgabe Defaults
 

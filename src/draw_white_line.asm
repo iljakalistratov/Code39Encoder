@@ -1,3 +1,4 @@
+#Zeichne weiße Linie
 draw_white_line:
 
        addi sp, sp, -4

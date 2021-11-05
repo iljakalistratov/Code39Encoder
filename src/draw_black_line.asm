@@ -1,3 +1,4 @@
+#Zeichne weiße Linie
 draw_black_line:
 
        addi sp, sp, -4

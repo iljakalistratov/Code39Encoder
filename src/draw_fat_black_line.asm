@@ -1,3 +1,4 @@
+#Zeichne breite schwarze Linie
 draw_fat_black_line:
 
        addi sp, sp, -4

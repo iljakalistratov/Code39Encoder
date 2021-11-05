@@ -1,3 +1,4 @@
+#Zeichne breite weiße Linie
 draw_fat_white_line:
 
        addi sp, sp, -4

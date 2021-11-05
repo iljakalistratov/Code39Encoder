@@ -1,4 +1,4 @@
-
+#Funktion zum zeichnen einer Linie; a3 muss für Farbe übergeben werden
 draw_line:
 
         addi sp, sp, -4
