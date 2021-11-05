@@ -19,6 +19,10 @@ Code39 is a barcode format, in which each char of the alphabet has its own patte
 Code39 has the "*" symbol as start, as well as, stop sign, to give a barcode scanner the
 opportunity to know, where the word starts and where it ends.
 
+There isn't any algorithm behind Code39. Every char of the alphabet is assigned to a specific pattern:
+
+![Code39 Pattern](pattern.gif)
+
 The program takes an input and reads the string out of it. Then the processing and conversion of the string will start.
 
 The whole program is written in RISC-V assembly language. It does not contain any
