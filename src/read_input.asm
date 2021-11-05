@@ -14,7 +14,7 @@ read_input:
        sw a0,0(t1) 
        la a0,string_input_text   
       
-# Starte Einageb-Dialog 
+# Starte Eingabe-Dialog 
           
 display_dialog:   
        la a1,string_to_encode

@@ -26,6 +26,8 @@ C-code or compiled C-code.
 
 ### How to run
 
+Open up the main.asm file in RARS.
+
 Before you start the program, it is important to open the Bitmap Display and to configure it.
 The configuration should look like this:
 
@@ -42,16 +44,18 @@ This is the place, where to enter the string you want to convert into Code39.
 
 If you entered a string, you can click on "OK". The program should start to encode it and show the converted Code39 format on the Bitmap Display.
 
-Due to lack of time, for now only strings, containing the chars "1" and "2" are working.
+Due to lack of time, for now only strings, containing the chars "1", "2" and "3" are working.
 
 ## Files
 Describe the content of each file of your application: e.g.
 
-src/main.asm # Main "function" of the programm.
+src/main.asm # Main function of the programm.
 
 src/cesplib_rars.asm # configurations for RARS and the Bitmap Display of RARS
 
 src/draw_pixel.asm # draw_pixel function of our lecture in Rechnerarchitektur, which draws a pixel with an given color & position on the Bitmap Display.
+
+src/draw_line.asm # function, which makes it possible to draw lines in different colors
 
 src/draw_black_line.asm # draws a vertical black line
 
@@ -61,18 +65,22 @@ src/draw_fat_black_line.asm # draws a fat (3px) vertical black line
 
 src/draw_fat_white_line.asm # draws a fat (3px) vertical white line
 
-src/determine_length_of_string.asm # function to determine length of a string
+src/read_input.asm # opens the input dialog
 
-src/encode.asm # function to convert every char of the string
+src/analyze_input.asm # function to process the input
 
-src/process_star.asm # function to draw the Code39 Code of the char "*"
+src/read_input.asm # opens the input dialog
 
-src/process_one.asm # function to draw the Code39 Code of the char "1"
+src/encode.asm # function to convert every char of the string and draw it on the Bitmap Display
 
-src/process_two.asm # function to draw the Code39 Code of the char "2"
+src/create_pattern.asm # the draw function of every char in the alphabet is handled in this file
+
+src/print_input.asm # function that prints the size and the content of the input string -> this function was only used for debugging
+
+
 
 test/test1.asm - test9.asm # 9 unit tests for featureA
 
 
 ## Test
-Screenshot that shows succedded (unit) tests 
+Due to lack of time, there are no unit tests in this project.

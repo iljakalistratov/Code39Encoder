@@ -1,5 +1,5 @@
 
-# Drucke Eingabe und ermittelte Laenge (Trace only)
+# Drucke Eingabe und ermittelte Laenge (Debugging only)
 
 print_input:
 
