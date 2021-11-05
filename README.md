@@ -16,7 +16,7 @@ https://youtu.be/Lp5gN6S5I2U
 ## Description
 
 Code39 is a barcode format, in which each char of the alphabet has its own pattern, consisting out of five black lines and four white lines. Besides of that, there are two different widths of the lines, 3 fat lines & the rest are thin lines.
-Code39 has the "*" as start, as well as, stop sign, to give a barcode scanner the
+Code39 has the "*" symbol as start, as well as, stop sign, to give a barcode scanner the
 opportunity to know, where the word starts and where it ends.
 
 The program takes an input and reads the string out of it. Then the processing and conversion of the string will start.
@@ -45,7 +45,7 @@ This is the place, where to enter the string you want to convert into Code39.
 If you entered a string, you can click on "OK". The program should start to encode it and show the converted Code39 format on the Bitmap Display.
 
 ### Restrictions
-- Due to lack of time, for now only strings, containing numbers from "1" to "9" are working.
+- Due to lack of time, for now only strings, containing numbers from "0" to "9" are working.
 - String vaildation is not implemented.
 
 ## Files
