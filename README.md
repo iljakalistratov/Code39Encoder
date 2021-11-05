@@ -44,7 +44,7 @@ This is the place, where to enter the string you want to convert into Code39.
 
 If you entered a string, you can click on "OK". The program should start to encode it and show the converted Code39 format on the Bitmap Display.
 
-Due to lack of time, for now only strings, containing the chars "1", "2" and "3" are working.
+Due to lack of time, for now only strings, containing numbers from "1" to "9" are working.
 
 ## Files
 Describe the content of each file of your application: e.g.
