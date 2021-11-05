@@ -77,10 +77,5 @@ src/create_pattern.asm # the draw function of every char in the alphabet is hand
 
 src/print_input.asm # function that prints the size and the content of the input string in the console -> this function was only used for debugging
 
-
-
-test/test1.asm - test9.asm # 9 unit tests for featureA
-
-
 ## Test
 Due to lack of time, there are no unit tests in this project.
