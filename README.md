@@ -31,14 +31,14 @@ Open up the main.asm file in RARS.
 Before you start the program, it is important to open the Bitmap Display and to configure it.
 The configuration should look like this:
 
-![Bitmap Display](https://raw.githubusercontent.com/iljakalistratov/Code39Encoder/main/pictures/bitmapdisplay.PNG)
+![Bitmap Display](https://raw.githubusercontent.com/iljakalistratov/Code39Encoder/main/pictures/bitmapdisplay.PNG "Bitmap Display")
 
 If this is done, click on the "Connect to program" button.
 Now you can assemble and run the main.asm.
 
 Now if you started the program you should see an input window, which looks like this:
 
-![Input Window](/pictures/input.png)
+![Input Window](https://raw.githubusercontent.com/iljakalistratov/Code39Encoder/main/pictures/input.PNG "Input Window")
 
 This is the place, where to enter the string you want to convert into Code39.
 
