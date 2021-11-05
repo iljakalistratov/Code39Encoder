@@ -1,3 +1,5 @@
+#Festgelegte Pattern für jedes Zeichen des Alphabets
+
 create_star_pattern:
 
        addi sp, sp, -4

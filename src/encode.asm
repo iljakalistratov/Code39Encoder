@@ -53,35 +53,40 @@ handle_four:
        bne t3,t4,handle_five
        jal ra,create_four_pattern
        j for.encode.end
-       
+      
+#Verarbeite Ziffer 5        
 handle_five:
        la t4,five
        lb t4,0(t4)
        bne t3,t4,handle_six
        jal ra,create_five_pattern
        j for.encode.end       
-       
+         
+#Verarbeite Ziffer 6    
 handle_six:
        la t4,six
        lb t4,0(t4)
        bne t3,t4,handle_seven
        jal ra,create_six_pattern
        j for.encode.end       
-
+      
+#Verarbeite Ziffer 7
 handle_seven:
        la t4,seven
        lb t4,0(t4)
        bne t3,t4,handle_eight
        jal ra,create_seven_pattern
        j for.encode.end       
-
+      
+#Verarbeite Ziffer 8
 handle_eight:
        la t4,eight
        lb t4,0(t4)
        bne t3,t4,handle_nine
        jal ra,create_eight_pattern
        j for.encode.end       
-
+      
+#Verarbeite Ziffer 9
 handle_nine:
        la t4,nine
        lb t4,0(t4)
@@ -92,7 +97,7 @@ handle_nine:
 handle_zero:
          
 
-
+#Ende des Encode Loops
 for.encode.end :
        lw t1, 4(sp)
        lw t2, 8(sp)
