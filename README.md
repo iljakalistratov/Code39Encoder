@@ -75,7 +75,7 @@ src/encode.asm # function to convert every char of the string and draw it on the
 
 src/create_pattern.asm # the draw function of every char in the alphabet is handled in this file
 
-src/print_input.asm # function that prints the size and the content of the input string -> this function was only used for debugging
+src/print_input.asm # function that prints the size and the content of the input string in the console -> this function was only used for debugging
 
 
 
