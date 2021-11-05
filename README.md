@@ -38,7 +38,7 @@ Now you can assemble and run the main.asm.
 
 Now if you started the program you should see an input window, which looks like this:
 
-![Input Window](/pictures/input.png")
+![Input Window](/pictures/input.png)
 
 This is the place, where to enter the string you want to convert into Code39.
 
