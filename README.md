@@ -9,9 +9,9 @@ Ilja Kalistratov
 
 ## Code39 Encoder Video
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/-h3eH4ubuno/0.jpg)](http://www.youtube.com/watch?v=-h3eH4ubuno "Video Title")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/Lp5gN6S5I2U/0.jpg)](http://www.youtube.com/watch?v=Lp5gN6S5I2U "Code39Encoder Video")
 
-Replace -h3eH4ubuno in the this .md by your YT video
+https://youtu.be/Lp5gN6S5I2U
 
 ## Description
 
