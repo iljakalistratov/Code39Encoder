@@ -31,7 +31,7 @@ Open up the main.asm file in RARS.
 Before you start the program, it is important to open the Bitmap Display and to configure it.
 The configuration should look like this:
 
-![Bitmap Display](/pictures/bitmapdisplay.png)
+![Bitmap Display](https://raw.githubusercontent.com/iljakalistratov/Code39Encoder/main/pictures/bitmapdisplay.PNG)
 
 If this is done, click on the "Connect to program" button.
 Now you can assemble and run the main.asm.
