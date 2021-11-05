@@ -1,104 +1,103 @@
 .data
-.align 3
-string_to_encode: .string "12"
-.align 3
+.align 2
+string_length: .word 0
+string_to_encode: .word 0     
+current_x_axis: .word 0                             
+.align 2
 string_input_text: .string "Eingabe "
-.align 3
+.align 2
 string_length_text: .string "  L‰nge der Eingabe "
-.align 3
-eins: .string "1"
-.align 3
-verarbeite_eins_text: .string "Verarbeite Eins "
-.align 3
-zeichne_weiﬂe_linie_text: .string "Zeichne weiﬂe Linie"
-.align 3
-zeichne_pixel: .string "Zeichen Pixel "
-.align 3
-string_length: .word
-.align 3
-pixel_count: .word 
+.align 2
+string_keine_daten_eingegeben: .string "Keine Daten eingegeben, bitte Daten eingeben "
+.align 2
+one: .string "1"
+.align 2
+two: .string "2"
+.align 2
+three: .string "3"
+.align 2
+four: .string "4"
+.align 2
+five: .string "5"
+.align 2
+six: .string "6"
+.align 2
+seven: .string "7"
+.align 2
+eight: .string "8"
+.align 2
+nine: .string "9"
+
+.eqv white  0xffffff
+.eqv black  0x000000
+.eqv line_height 256
+.eqv line_x_axis_start 10
+.eqv cancel_choosen -2
+.eqv no_data_entered -3
+.eqv OK 0
+.eqv NULL 0
+.eqv NL 10
+.eqv allocated_input_size 200
 
 .text
 
-# Bestimme L‰nge des Strings
+# Lies input string und beende falls Cancel
 
-la a0,string_to_encode
-jal ra, strlen
+      jal ra,read_input     
+      li t1,cancel_choosen
+      beq t1,a1,exit
+      
+# Analysiere Eingabe
 
-# Speichere L‰nge des Strings in string_length
-
-la t1, string_length
-add t2, a0, zero
-sw t2, 0(t1) 
-
+      la t1,string_to_encode
+      lw a0,0(t1)
+      jal ra,analyze_input       
 
 # Drucke Eingabe und ermittelte Laenge
 
-la a0,string_input_text
-li a7,4
-ecall
+#    jal ra,print_input
 
-la a0,string_to_encode
-li a7,4
-ecall
+# Setze Ausgabe Defaults
 
-la a0,string_length_text
-li a7,4
-ecall
-
-la t1,string_length
-lw a0, 0(t1)
-li a7,1
-ecall
+     la t1,current_x_axis                    
+     li t2,line_x_axis_start                 # Setze Default Start Koordinate als Start Koordinate
+     sw t2,0(t1)
+     
 
 # ‹bersetze jedes Zeichen in der Eingabe
 
-la a0,string_to_encode
-jal ra,translate
+     la t1,string_to_encode
+     lw a0,0(t1)
+     la t1,string_length
+     lw a1,0(t1)
+     jal ra,encode
 
 #Exit
 
-li a7,10
-ecall
-
-# Ubersetze jedes Zeichen
-translate:
-la t1,string_length
-lw t1,0(t1)  # t1 enth‰lt Laenge des Strings
-add t0, zero, zero # t0 enth‰lt laufende Zahl 
-transloop.start:
-add t2,t0,a0 # a0 enth‰lt start adresse des eingabe Strings, t2 zeigt auf laufenden Buchstaben
-lb t3,0(t2) # t3 enth‰lt laufenden Buchstaben
-la t4,eins
-lb t4,0(t4)
-beq t3,t4, verarbeite_eins
-
-li a7,10
-ecall
+exit:
+     li a7,10
+     ecall
 
 
-
-
-# Bestimme Laenge des Strings
-strlen:
-    add t0, zero , zero
-for_loop.start:
-    add  t1, t0, a0      
-    lb   t2, 0(t1)      
-    beq  t2, zero, for_loop.end
-    addi t0, t0, 1       
-    jal  zero, for_loop.start
-for_loop.end:
-    addi a0, t0, 0   
-    jalr zero, 0(ra)
-
-.include "process_One.asm"
+.include "encode.asm"
 
 .include "draw_white_line.asm"
 
-.include "draw_wide_white_line.asm"
-
 .include "draw_black_line.asm"
 
+.include "draw_fat_white_line.asm"
+
+.include "draw_fat_black_line.asm"
+
+.include "draw_line.asm"
+
+.include "analyze_input.asm"
+
+.include "create_pattern.asm"
+
+.include "print_input.asm"
+
 .include "draw_pixel.asm"
+
+.include "read_input.asm"
 
