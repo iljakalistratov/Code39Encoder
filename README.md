@@ -49,7 +49,6 @@ If you entered a string, you can click on "OK". The program should start to enco
 - String vaildation is not implemented.
 
 ## Files
-Describe the content of each file of your application: e.g.
 
 src/main.asm # Main function of the programm.
 
