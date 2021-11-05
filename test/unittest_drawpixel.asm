@@ -1,11 +1,5 @@
-#   ___ ___ ___ ___   _    ___ ___ _____ _   _ ___ ___ 
-#  / __| __/ __| _ \ | |  | __/ __|_   _| | | | _ \ __|
-# | (__| _|\__ \  _/ | |__| _| (__  | | | |_| |   / _| 
-#  \___|___|___/_|   |____|___\___| |_|  \___/|_|_\___|
-#
-# Copyright 2021 Michael J. Klaiber
 
-.include "cesplib_rars.asm"
+.include "../src/cesplib_rars.asm"
 
 
 utest_draw_pixel:
@@ -33,4 +27,4 @@ utest_draw_pixel:
 li a7, 10
 ecall
 
-.include "draw_pixel.asm"
+.include "../src/draw_pixel.asm"
