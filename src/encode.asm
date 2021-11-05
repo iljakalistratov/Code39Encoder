@@ -38,14 +38,60 @@ handle_two:
        jal ra,create_two_pattern
        j for.encode.end
        
+#Verarbeite Ziffer 3       
 handle_three:
        la t4,three
        lb t4,0(t4)
        bne t3,t4,handle_four
        jal ra,create_three_pattern
        j for.encode.end
-       
+    
+#Verarbeite Ziffer 4                 
 handle_four:
+       la t4,four
+       lb t4,0(t4)
+       bne t3,t4,handle_five
+       jal ra,create_four_pattern
+       j for.encode.end
+       
+handle_five:
+       la t4,five
+       lb t4,0(t4)
+       bne t3,t4,handle_six
+       jal ra,create_five_pattern
+       j for.encode.end       
+       
+handle_six:
+       la t4,six
+       lb t4,0(t4)
+       bne t3,t4,handle_seven
+       jal ra,create_six_pattern
+       j for.encode.end       
+
+handle_seven:
+       la t4,seven
+       lb t4,0(t4)
+       bne t3,t4,handle_eight
+       jal ra,create_seven_pattern
+       j for.encode.end       
+
+handle_eight:
+       la t4,eight
+       lb t4,0(t4)
+       bne t3,t4,handle_nine
+       jal ra,create_eight_pattern
+       j for.encode.end       
+
+handle_nine:
+       la t4,nine
+       lb t4,0(t4)
+       bne t3,t4,handle_zero
+       jal ra,create_nine_pattern
+       j for.encode.end      
+       
+handle_zero:
+         
+
 
 for.encode.end :
        lw t1, 4(sp)

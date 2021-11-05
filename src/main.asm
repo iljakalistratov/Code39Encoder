@@ -15,6 +15,18 @@ one: .string "1"
 two: .string "2"
 .align 2
 three: .string "3"
+.align 2
+four: .string "4"
+.align 2
+five: .string "5"
+.align 2
+six: .string "6"
+.align 2
+seven: .string "7"
+.align 2
+eight: .string "8"
+.align 2
+nine: .string "9"
 
 .eqv white  0xffffff
 .eqv black  0x000000
