@@ -1,5 +1,5 @@
 
-# Drucke Eingabe und ermittelte Laenge
+# Drucke Eingabe und ermittelte Laenge (Trace only)
 
 print_input:
 
@@ -11,6 +11,7 @@ print_input:
        ecall
 
        la a0,string_to_encode
+       lw a0,0(a0)
        li a7,4
        ecall
 
