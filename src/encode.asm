@@ -95,7 +95,14 @@ handle_nine:
        j for.encode.end      
        
 handle_zero:
-         
+       la t4,zero_string
+       lb t4,0(t4)
+       bne t3,t4,handle_a
+       jal ra,create_zero_pattern
+       j for.encode.end             
+
+handle_a:
+
 
 #Ende des Encode Loops
 for.encode.end :

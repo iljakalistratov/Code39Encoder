@@ -27,6 +27,8 @@ seven: .string "7"
 eight: .string "8"
 .align 2
 nine: .string "9"
+.align 2
+zero_string: .string "0"
 
 .eqv white  0xffffff
 .eqv black  0x000000
