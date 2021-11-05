@@ -49,7 +49,7 @@ This is the place, where to enter the string you want to convert into Code39.
 If you entered a string, you can click on "OK". The program should start to encode it and show the converted Code39 format on the Bitmap Display.
 
 ### Restrictions
-- Due to lack of time, for now only strings, containing numbers from "0" to "9" are working. Other symblos will be ignored
+- Due to lack of time, for now only strings, containing numbers from "0" to "9" are working. Other characters/symbols will be ignored
 - String vaildation is not implemented.
 
 ## Files
